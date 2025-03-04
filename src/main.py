@@ -33,7 +33,9 @@ def get_element_from_choice(choice, ls):
 
 def generate(sentence, rewriter):
     print("Generating alteration...")
-    print(f"\n{rewriter.rewrite(sentence)}\n")
+    output = rewriter.rewrite(sentence)
+    print(f"\n{output}\n")
+    return output
 
 
 selected_model = None
@@ -57,9 +59,11 @@ while True:
         while True:
             if _user_input == "" or _user_input == "new":
                 user_input = input(f"Please input sentence to be rewritten by {selected_model}: ")
-                generate(user_input, rewriter)
+                previous_output = generate(user_input, rewriter)
             elif _user_input == "again":
-                generate(user_input, rewriter)
+                previous_output = generate(user_input, rewriter)
+            elif _user_input == "continue":
+                previous_output = generate(previous_output, rewriter)
             else:
                 print(f"\"{_user_input}\" not recognized")
-            _user_input = input("Input \"new\" to write a new sentence, or \"again\" to regenerate from the same sentence: ")
+            _user_input = input("Input \"new\" to write a new sentence, \"again\" to regenerate from the same sentence, or \"continue\" to regenerate from the previous output: ")
