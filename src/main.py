@@ -1,7 +1,8 @@
 import os
+import datetime
 from rewriter import Rewriter
 
-
+log_file_path = "logs/{}.txt"
 
 models = [
     "smollm2:135m",
@@ -37,6 +38,15 @@ def generate(sentence, rewriter):
     print(f"\n{output}\n")
     return output
 
+def log(command, output=None):
+    date = datetime.datetime.now().date()
+    time = datetime.datetime.now().time().strftime('%H:%M:%S')
+
+    current_log_file_path = log_file_path.format(date)
+    with open(current_log_file_path, 'a') as file:
+        file.write(f"{time} {command}\n\n")
+        if output is not None:
+            file.write(f"\t{output}\n\n")
 
 selected_model = None
 selected_mode = None
@@ -55,15 +65,19 @@ while True:
         selected_mode = get_element_from_choice(user_input, modes)
         rewriter = Rewriter(selected_model)
     elif selected_mode == modes[0]:
+        log(f"Model {selected_model} selected with mode {selected_mode}.")
         cls()
         while True:
             if _user_input == "" or _user_input == "new":
                 user_input = input(f"Please input sentence to be rewritten by {selected_model}: ")
                 previous_output = generate(user_input, rewriter)
+                log(f"Input: {user_input}", previous_output)
             elif _user_input == "again":
                 previous_output = generate(user_input, rewriter)
+                log("Again", previous_output)
             elif _user_input == "continue":
                 previous_output = generate(previous_output, rewriter)
+                log("Continue", previous_output)
             else:
                 print(f"\"{_user_input}\" not recognized")
             _user_input = input("Input \"new\" to write a new sentence, \"again\" to regenerate from the same sentence, or \"continue\" to regenerate from the previous output: ")
