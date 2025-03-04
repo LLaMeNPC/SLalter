@@ -105,7 +105,8 @@ while True:
                 num_alterations = int(input("How many alterations would you like to generate per sentence? "))
                 with open(f"batches/{batch_name}") as batch_data:
                     batch_json = json.load(batch_data)
-                    output_filename = f"{batch_name}-alteration-{datetime.datetime.now()}"
+                    date_and_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                    output_filename = f"{batch_name}-alteration-{date_and_time}"
                     output = {}
                     print("Rewriting sentences...")
                     progress = 0.0
