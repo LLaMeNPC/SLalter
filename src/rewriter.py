@@ -15,8 +15,9 @@ class Rewriter:
     def rewrite(self, sentence) -> str:
         return ollama.chat(
             model="Rewriter",
+            options={"temperature":0.8},
             messages=[{"role": "user", "content": f"""
-            Please rewrite the following sentence, keeping the meaning, emotion and tone intact:
+            Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:
             {sentence}
             """}]
         )["message"]["content"]
