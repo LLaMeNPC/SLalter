@@ -78,7 +78,7 @@ while True:
         selected_mode = get_element_from_choice(user_input, modes)
         rewriter = Rewriter(selected_model)
     elif selected_mode == modes[0]:
-        log(f"Model {selected_model} selected with mode {selected_mode}.")
+        log(f"Model {selected_model} selected with mode {selected_mode}. Config:", rewriter.config)
         cls()
         while True:
             if _user_input == "" or _user_input == "new":
