@@ -1,6 +1,7 @@
-import os, json, datetime, sys, math
+import os, json, datetime
 from rewriter import Rewriter
 from log import log, log_program_start
+from console_utils import print_progress_bar
 
 models = [
     "smollm2:135m",
@@ -15,20 +16,6 @@ modes = [
 
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
-
-
-def delete_last_line():
-    "Deletes the last line in the STDOUT"
-    # cursor up one line
-    sys.stdout.write('\x1b[1A')
-    # delete last line
-    sys.stdout.write('\x1b[2K')
-
-def print_progress(progress : float):
-    #    if progress < 0 or progress > 1:
-    #    raise Exception("Invalid progress given")
-    progress_string = "█" * math.floor(progress * 50) + "-" * math.ceil((1-progress) * 50) + f"| {progress * 100:.2f}%"
-    print(progress_string)
 
 def choice(ls):
     for i, le in enumerate(ls):
@@ -101,14 +88,13 @@ while True:
                     output = {"config": rewriter.config, "output": {}}
                     print("Rewriting sentences...")
                     progress = 0.0
-                    print_progress(progress)
+                    print_progress_bar(progress)
                     for sentence in batch_json:
                         output["output"][sentence] = []
                         for _ in range(num_alterations):
                             output["output"][sentence].append(rewriter.rewrite(sentence))
                             progress += 1.0 / (len(batch_json) * num_alterations)
-                            delete_last_line()
-                            print_progress(progress)
+                            print_progress_bar(progress)
                         with open(f"output/{output_filename}.json", "w") as f:
                             f.write(json.dumps(output))
                     print(f"Done! Wrote output to output/{output_filename}.json")
