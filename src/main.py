@@ -1,6 +1,6 @@
 import os, json, datetime, sys, math
 from rewriter import Rewriter
-from log import log
+from log import log, log_program_start
 
 models = [
     "smollm2:135m",
@@ -54,6 +54,8 @@ selected_model = None
 selected_mode = None
 _user_input = ""
 
+log_program_start()
+
 cls()
 while True:
     if selected_model == None:
@@ -96,14 +98,14 @@ while True:
                     batch_json = json.load(batch_data)
                     date_and_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                     output_filename = f"{batch_name}-alteration-{date_and_time}"
-                    output = {}
+                    output = {"config": rewriter.config, "output": {}}
                     print("Rewriting sentences...")
                     progress = 0.0
                     print_progress(progress)
                     for sentence in batch_json:
-                        output[sentence] = []
+                        output["output"][sentence] = []
                         for _ in range(num_alterations):
-                            output[sentence].append(rewriter.rewrite(sentence))
+                            output["output"][sentence].append(rewriter.rewrite(sentence))
                             progress += 1.0 / (len(batch_json) * num_alterations)
                             delete_last_line()
                             print_progress(progress)
