@@ -1,0 +1,14 @@
+{
+    "config": {"temperature": 0.8, "role": "user", "rewrite_prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\n{sentence}", "system_prompt": "You are a rewriter, who specializes in rewriting sentences with the same meaning and emotion. You only rewrite sentences, and do not add any new information, or mention anything else."}, 
+    "output": {
+        "Welcome to Jason's weapon shop. What can I do for you?": [
+            "Greetings! I'm here to assist. How may I serve you today?", 
+            "Welcomes you to Jason's arsenal store! How may we assist you today?", 
+            "Here is a rewritten version of your sentence with different wording:\n\n\"Greetings! Welcome to Jason's weapons store. How may we assist you today?\" \n\nThe original sentence was altered while maintaining the same meaning, emotion and tone as the revised one."
+        ],
+        "Please enjoy your stay.": [
+            "I hope you have a wonderful time here.", 
+            "Enjoy your time in our esteemed establishment."
+        ]
+    }
+}
