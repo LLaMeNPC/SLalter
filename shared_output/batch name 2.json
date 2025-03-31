@@ -1,0 +1,136 @@
+{
+    "config": {"temperature": 0.8, "role": "user", "rewrite_prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\n{sentence}", "system_prompt": "You are a rewriter, who specializes in rewriting sentences with the same meaning and emotion. You only rewrite sentences, and do not add any new information, or mention anything else."}, 
+    "output": {
+        "Welcome to Jason's weapon shop. What can I do for you?": [
+            "Greetings! I'm here to assist. How may I serve you today?", 
+            "Welcomes you to Jason's arsenal store! How may we assist you today?", 
+            "Here is a rewritten version of your sentence with different wording:\n\n\"Greetings! Welcome to Jason's weapons store. How may we assist you today?\" \n\nThe original sentence was altered while maintaining the same meaning, emotion and tone as the revised one.", 
+            "You are now in Jason's gun store. How may I assist you today?", 
+            "You're welcome in Jason's arsenal store. How may we assist you today?"
+        ],
+        "Please enjoy your stay.": [
+            "I hope you have a wonderful time here.", 
+            "Enjoy your time in our esteemed establishment.", 
+            "We look forward to having you stay with us.", 
+            "Enjoy your stay, please!", "Enjoy your stay."
+        ], 
+        "You must gather your party before venturing forth.": [
+            "It's essential to assemble your guests prior to embarking on this journey together.", 
+            "It is necessary to assemble your gathering unit prior to embarking on this endeavor.", 
+            "You need to bring your guests together so they can join you in your adventure.", 
+            "First step in planning your event is to invite all guests who will be attending.", 
+            "It's imperative that you assemble your group prior to embarking on your journey."
+        ], 
+        "Are you sure you want to leave now? It seems like you still have matters to attend to.": [
+            "\"Don't go just yet; there are still some tasks that need your attention.\"", 
+            "Are you certain about leaving now? There are still tasks that need your attention.", 
+            "You're certain about leaving? It looks as though you have other things on your plate right now.", 
+            "You're certain about leaving now, aren't you? Seems like there are some things left to handle first ", 
+            "Is it certain that you wish to depart now, as there seem to be ongoing tasks requiring your attention?"
+        ], 
+        "I used to be an adventurer like you.": [
+            "At one point in my life, I was just as adventurous as you are now.", 
+            "I once lived a life of wandering and exploring as one such kindred spirit.", 
+            "Once upon a time, I was just as bold as you are today.", 
+            "Once I was a traveler of your style.", 
+            "Once upon a time, I was just as adventurous as you are now."
+        ], 
+        "You must save the kingdom.": [
+            "You have to protect the realm.", 
+            "You have to safeguard the realm.", 
+            "You need to protect the realm.", 
+            "Save the kingdom from destruction.", 
+            "You have to protect the realm."
+        ], 
+        "Could you please get me home?": [
+            "Would it be possible for you to bring me back?", 
+            "Would it be possible for you to drive me home?", 
+            "Can I request to return to my dwelling place at once?", 
+            "Would it be possible for you to transport me back to my residence?", 
+            "Can I have a ride to my location?"
+        ], 
+        "I need healing.": [
+            "It is time to undergo spiritual recovery.", 
+            "I require healing.", 
+            "I require healing.", 
+            "I require recovery.", 
+            "I am in need of healing."
+        ], 
+        "More gold is required": [
+            "A higher amount of gold needs to be obtained", 
+            "A larger quantity of gold needs to be procured.", 
+            "A greater amount of wealth is needed", 
+            "A greater amount of wealth is necessary", 
+            "A higher amount of precious metals is needed."
+        ], 
+        "Your inventory is full.": [
+            "You've reached your storage capacity.", 
+            "Your stock is depleted.", 
+            "You have reached your inventory limit.", 
+            "Enough items are stored in your warehouse to meet current demand.", 
+            "You have reached your maximum capacity for stock."
+        ], 
+        "I've got a lot on my mind.": [
+            "I'm preoccupied with a multitude of thoughts.", 
+            "I'm currently burdened with an abundance of concerns.", 
+            "I have quite a bit going on in my head.", 
+            "There's quite a bit preoccupying me currently.", 
+            "My head is filled with multiple concerns at the moment."
+        ], 
+        "Theese boots have seen everything.": [
+            "These shoes have witnessed every moment.", 
+            "These shoes have witnessed it all.", 
+            "These shoes have witnessed it all.", 
+            "These shoes have witnessed it all.", 
+            "These shoes have witnessed it all."
+        ], 
+        "Sorry, I'm preoccupied right now.": [
+            "I am currently occupied with something else.", 
+            "I'm currently occupied elsewhere.", 
+            "Apologies for being distracted at this time.", 
+            "I am presently distracted.", 
+            "I'm currently occupied, so let's catch up at another time."
+        ], 
+        "Please don't talk to me anymore.": [
+            "I need some privacy right now.", 
+            "Don't converse with me at all.", 
+            "I ask that you refrain from speaking to me in this moment.", 
+            "It would be best if you stopped talking to me.", 
+            "I wish you wouldn't speak with me anymore."
+        ], 
+        "This place stinks!": [
+            "This location smells foul!", 
+            "This establishment has a foul odor!", 
+            "The air quality in this location is quite poor.", 
+            "The air here is really foul!", 
+            "You can't get past the smell here!"
+        ], 
+        "Hey, what are you doing over there?!": [
+            "Hey, what's going on over there?!", 
+            "Hey, where were you?", 
+            "I see you're over there. What's going on?", 
+            "What's going on in that area?", 
+            "Excuse me, is that you over there?"
+        ], 
+        "Watch what you're doing or I'll feed you to the hounds!": [
+            "Be careful with your actions; if not, you might become lunch for the pack of dogs.", 
+            "Be careful; if you don't watch your step, I might just let them have a taste of you.", 
+            "Be careful with your actions, or you could end up in a situation where you'd be eaten by dogs.", 
+            "Be careful with your actions, or you might end up as the prey for the hunting dogs.", 
+            "Be careful with your actions, or I might just be forced to serve you as a snack for the pack."
+        ], 
+        "I will destroy you.": [
+            "You are in for a world of pain.", 
+            "I aim to eradicate your existence from this world.", 
+            "Your destruction is assured.", 
+            "I shall obliterate you.", 
+            "I aim to overwhelm and defeat you."
+        ],
+        "What's life like in Rattay?": [
+            "Life is as vivid and vibrant in Rattay as a ray of sunshine on a clear day.",
+            "Life in Rattay is quite something special.",
+            "How is life like in Rattay?",
+            "Life is what it is in Rattay."
+        ]
+    }
+}
