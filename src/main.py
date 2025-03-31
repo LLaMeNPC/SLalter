@@ -90,9 +90,13 @@ while True:
                     progress = 0.0
                     print_progress_bar(progress)
                     for sentence in batch_json:
-                        output["output"][sentence] = []
+                        title = sentence
+                        output["output"][title] = {}
+                        prompt = rewriter.config["rewrite_prompt"].format(sentence = sentence)
+                        output["output"][title]["prompt"] = prompt
+                        output["output"][title]["generations"] = []
                         for _ in range(num_alterations):
-                            output["output"][sentence].append(rewriter.rewrite(sentence))
+                            output["output"][title]["generations"].append(rewriter.rewrite(sentence))
                             progress += 1.0 / (len(batch_json) * num_alterations)
                             print_progress_bar(progress)
                         with open(f"output/{output_filename}.json", "w") as f:
