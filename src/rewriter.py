@@ -9,7 +9,7 @@ class Rewriter:
         self.client.create(
             model='Rewriter',
             from_=model_string,
-            system=self.config["system_prompt"]
+            system=self.config["rewrite_system_prompt"]
         )
 
     def rewrite(self, sentence) -> str:

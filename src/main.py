@@ -1,5 +1,6 @@
 import os, json, datetime
 from rewriter import Rewriter
+from generator import Generator
 from log import log, log_program_start
 from console_utils import print_progress_bar
 
@@ -55,6 +56,7 @@ while True:
         user_input = choice(modes)
         selected_mode = get_element_from_choice(user_input, modes)
         rewriter = Rewriter(selected_model)
+        generator = Generator(selected_model)
     elif selected_mode == modes[0]:
         log(f"Model {selected_model} selected with mode {selected_mode}. Config:", rewriter.config)
         cls()
@@ -81,6 +83,9 @@ while True:
             if batch_name != None:
                 cls()
                 num_alterations = int(input("How many alterations would you like to generate per sentence? "))
+                
+                generator.batch_generate(batch_name, num_alterations)
+                """
                 with open(f"batches/{batch_name}") as batch_data:
                     batch_json = json.load(batch_data)
                     date_and_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -102,6 +107,8 @@ while True:
                         with open(f"output/{output_filename}.json", "w") as f:
                             f.write(json.dumps(output))
                     print(f"Done! Wrote output to output/{output_filename}.json")
+                """
+
             else:
                 print("Batch not recognized")
 
