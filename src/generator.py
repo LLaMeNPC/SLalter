@@ -59,7 +59,7 @@ class Generator:
         return f"{self.config["rewrite_prompt"].format(sentence = sentence)}{self.get_context_addition(context)}"
 
     def get_prompt_prompt(self, prompt, context = ""):
-        return f"{prompt}{self.get_context_addition(context)}"
+        return f"{self.config["prompt_prompt"].format(prompt = prompt)}{self.get_context_addition(context)}"
     
 
     def _generate(self, prompt, _model):

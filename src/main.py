@@ -7,7 +7,12 @@ from console_utils import print_progress_bar
 models = [
     "smollm2:135m",
     "smollm2:360m",
-    "smollm2:1.7b"
+    "smollm2:1.7b",
+    "smollm2:1.7b-instruct-q5_K_M",
+    "deepseek-r1:1.5b",
+    "deepseek-r1:7b",
+    "llama3.2:1b",
+    "llama3.2"
 ]
 
 modes = [
