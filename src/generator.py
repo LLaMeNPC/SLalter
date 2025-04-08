@@ -38,12 +38,12 @@ class Generator:
         self.config = get_config()
         self.client = ollama.Client()
         self.client.create(
-            model="Generator",
+            model='Generator',
             from_=model_string,
             system=self.config["prompt_system_prompt"]
         )        
         self.client.create(
-            model="Rewriter",
+            model='Rewriter',
             from_=model_string,
             system=self.config["rewrite_system_prompt"]
         )
@@ -51,35 +51,22 @@ class Generator:
         self.rewriter = Rewriter(model_string)
 
     def get_context_addition(self, context):
-        if context:
-            return f"""\n\n
-                {self.config["context_addition"].format(context = context)}
-            """
+        if context != "":
+            return f"\n\n{self.config["context_addition"].format(context = context)}"
         return ""
 
     def get_rewrite_prompt(self, sentence, context = ""):
-        return f"""
-            {self.config["rewrite_prompt"].format(sentence = sentence)}
-            {self.get_context_addition(context)}
-        """
+        return f"{self.config["rewrite_prompt"].format(sentence = sentence)}{self.get_context_addition(context)}"
 
     def get_prompt_prompt(self, prompt, context = ""):
-        return f"""
-            {prompt}
-            {self.get_context_addition(context)}
-        """
+        return f"{prompt}{self.get_context_addition(context)}"
     
 
     def _generate(self, prompt, _model):
         return ollama.chat(
             model=_model,
             options={"temperature": self.config["temperature"]},
-            messages=[
-{
-                    "role": self.config["role"],
-                    "content": prompt
-                }
-            ]
+            messages=[{"role": self.config["role"], "content": prompt}]
         )["message"]["content"]
 
     def prompt_generate(self, generation_dict):
@@ -93,8 +80,7 @@ class Generator:
         prompt = self.get_rewrite_prompt(
             generation_dict["original"],
             generation_dict["context"]
-        ),
- 
+        )
         return (
             prompt,
             self._generate(prompt,"Rewriter")
@@ -110,6 +96,7 @@ class Generator:
                 return self.prompt_generate(generation_dict) 
             case Mode.rewrite:
                 return self.rewrite_generate(generation_dict)
+        return (None,None)
 
     def batch_generate(self, batch_name, alteration_count, mode = Mode.auto):
         with open(f"batches/{batch_name}") as batch_data:
@@ -132,7 +119,9 @@ class Generator:
                 out_dict["generations"] = []
                 generations = out_dict["generations"]
                 for _ in range(alteration_count):
-                    generations.append(self.generate(generation_dict, mode))
+                    prompt, generation = self.generate(generation_dict, mode)
+                    generations.append(generation)
+                    out_dict["prompt"] = prompt
                     progress += 1.0 / (len(batch_json) * alteration_count)
                     print_progress_bar(progress)
                 with open(f"output/{output_filename}.json", "w") as f:
