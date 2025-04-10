@@ -12,7 +12,8 @@ models = [
     "deepseek-r1:1.5b",
     "deepseek-r1:7b",
     "llama3.2:1b",
-    "llama3.2"
+    "llama3.2",
+    "gemma3:1b"
 ]
 
 modes = [
