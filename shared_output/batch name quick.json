@@ -15,6 +15,11 @@
             "Life in Rattay is quite something special.",
             "How is life like in Rattay?",
             "Life is what it is in Rattay."
+        ],
+        "This is a sentence.": [
+            "This is a statement.",
+            "This sentence remains unchanged.",
+            "This is an utterance."
         ]
     }
 }

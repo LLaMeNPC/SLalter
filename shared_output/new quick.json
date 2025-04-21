@@ -1,0 +1,37 @@
+{
+    "config": {"temperature": 0.8, "role": "user", "rewrite_prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\n{sentence}", "system_prompt": "You are a rewriter, who specializes in rewriting sentences with the same meaning and emotion. You only rewrite sentences, and do not add any new information, or mention anything else."}, 
+    "output": {
+        "Welcome to Jason's weapon shop. What can I do for you?": {"prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\nWelcome to Jason's weapon shop. What can I do for you?", "generations": 
+            [
+                "Entering Jason's arsenal store, what assistance would you need?", 
+                "You are welcome at Jason's arsenal. How may we assist you today?", 
+                "Welcome to Jason's gun-for-hire. What's your business here?", 
+                "Step into Jason's arsenal, where we welcome you with a smile and offer assistance at your discretion. What would you like to inquire about today?"
+            ]
+        },
+        "What's life like in Rattay?": {"prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\nWhat's life like in Rattay?", "generations": 
+            [
+                "How is living in Rattay?", 
+                "How does life look in Rattay?", 
+                "How is life in Rattay?", 
+                "How is life in Rattay?"
+            ]
+        }, 
+        "This is a sentence.": {"prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\nThis is a sentence.", "generations": 
+            [
+                "This sentence is here.", 
+                "This is indeed a sentence.", 
+                "This is an instance of a sentence.", 
+                "This is an utterance."
+            ]
+        },
+        "Please enjoy your stay.": {"prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\nPlease enjoy your stay.", "generations": 
+            [
+                "Enjoy yourself during your stay.", 
+                "I hope you find the time to relax during your visit.", 
+                "I hope you find yourself comfortable during your time here.", 
+                "I look forward to welcoming you during your visit."
+            ]
+        }
+    }
+}
