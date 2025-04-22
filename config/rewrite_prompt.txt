@@ -1,4 +1,2 @@
-Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:
+Please rewrite the sentence below only once, changing up the wording, and keeping the meaning, emotion and tone intact. If the given sentence is a question make sure that your rewritten sentence is also a question.
 """{sentence}"""
-
-If the given sentence is a question make sure to respond with a question.
