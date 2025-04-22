@@ -1,6 +1,6 @@
 import os, json, datetime
 from rewriter import Rewriter
-from generator import Generator
+from generator import Generator, Mode
 from log import log, log_program_start
 from console_utils import print_progress_bar
 
@@ -90,7 +90,22 @@ while True:
                 cls()
                 num_alterations = int(input("How many alterations would you like to generate per sentence? "))
                 
-                generator.batch_generate(batch_name, num_alterations)
+                cls()
+                print("Please select a generation type")
+                generation_types = ["auto", "prompt", "rewrite"]
+                user_input = choice(generation_types)
+                generation_type = get_element_from_choice(user_input, generation_types)
+
+                mode = Mode.auto
+
+                if generation_type == "auto":
+                    mode = Mode.auto
+                elif generation_type == "prompt":
+                    mode = Mode.prompt
+                elif generation_type == "rewrite":
+                    mode = Mode.rewrite
+
+                generator.batch_generate(batch_name, num_alterations, mode)
                 """
                 with open(f"batches/{batch_name}") as batch_data:
                     batch_json = json.load(batch_data)

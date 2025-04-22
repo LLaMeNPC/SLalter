@@ -1,6 +1,6 @@
 {
   "Harald Sentence": {
-    "prompt": "Generate one frantic or angry variation of an NPC yelling at Harald for failing to bring the boat home. Keep the core meaning and use a natural, lore-friendly tone - no memes or modern slang. Example Structure: 'What are you doing Harald?!?! You were supposed to bring the boat home!!!!'",
+    "prompt": "Generate one frantic or angry variation of an NPC yelling at Harald for failing to bring the boat home. Keep the core meaning and use a natural, lore-friendly tone - no memes or modern slang.",
     "original": "What are you doing Harald?!?! You were supposed to bring the boat home!!!!",
     "context": "You are Haralds Dad. Harald is your son, and he was away on a trip with the family boat. This is not the first time he has let you down, and you expect more of him if he is to be your future heir.",
     "description": "The classic Harald Sentence"

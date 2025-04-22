@@ -1,6 +1,14 @@
-[
-    "Welcome to Jason's weapon shop. What can I do for you?",
-    "Please enjoy your stay.",
-    "What's life like in Rattay?",
-    "This is a sentence."
-]
+{
+    "Jason's weapon shop greeting": {
+      "original": "Welcome to Jason's weapon shop. What can I do for you?"
+    },
+    "Simple innkeeper formality" : {
+      "original": "Please enjoy your stay."
+    },
+    "Rattay infamous question" : {
+      "original": "What's life like in Rattay?"
+    },
+    "This is a sentence": {
+      "original":"This is a sentence." 
+    }
+}

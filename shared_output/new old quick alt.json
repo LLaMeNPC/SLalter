@@ -1,0 +1,33 @@
+{
+    "config": {"temperature": 0.8, "role": "user", "rewrite_prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\n{sentence}\n\n If the given sentence is a question make sure to respond with a question.", "system_prompt": "You are a rewriter, who specializes in rewriting sentences with the same meaning and emotion. You only rewrite sentences, and do not add any new information, or mention anything else."}, 
+    "output": {
+        "Welcome to Jason's weapon shop. What can I do for you?": {"prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\nWelcome to Jason's weapon shop. What can I do for you?\n\n If the given sentence is a question make sure to respond with a question.", "generations": 
+            [
+                "Greetings! I'm here to assist. How may I serve you today?", 
+                "Welcomes you to Jason's arsenal store! How may we assist you today?", 
+                "Here is a rewritten version of your sentence with different wording:\n\n\"Greetings! Welcome to Jason's weapons store. How may we assist you today?\" \n\nThe original sentence was altered while maintaining the same meaning, emotion and tone as the revised one."
+            ]
+        },
+        "What's life like in Rattay?": {"prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\nWhat's life like in Rattay?\n\n If the given sentence is a question make sure to respond with a question.", "generations": 
+            [
+                "Life is as vivid and vibrant in Rattay as a ray of sunshine on a clear day.",
+                "Life in Rattay is quite something special.",
+                "How is life like in Rattay?",
+                "Life is what it is in Rattay."
+            ]
+        }, 
+        "This is a sentence.": {"prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\nThis is a sentence.\n\n If the given sentence is a question make sure to respond with a question.", "generations": 
+            [
+                "This is a statement.",
+                "This sentence remains unchanged.",
+                "This is an utterance."
+            ]
+        },
+        "Please enjoy your stay.": {"prompt": "Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:\nPlease enjoy your stay.\n\n If the given sentence is a question make sure to respond with a question.", "generations": 
+            [
+                "I hope you have a wonderful time here.", 
+                "Enjoy your time in our esteemed establishment."
+            ]
+        }
+    }
+}

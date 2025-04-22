@@ -1,2 +1,4 @@
 Please rewrite the following sentence, changing up the wording, and keeping the meaning, emotion and tone intact:
-{sentence}
+"""{sentence}"""
+
+If the given sentence is a question make sure to respond with a question.
