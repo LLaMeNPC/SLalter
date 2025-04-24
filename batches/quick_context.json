@@ -1,0 +1,21 @@
+{
+    "Jason's weapon shop greeting": {
+      "prompt": "Generate a short friendly greeting from a sales assistant in Jason's weapon shop.",
+      "original": "Welcome to Jason's weapon shop. What can I do for you?",
+      "context": "You are a part time worker at Jason's weapon shop. Jason's weapon shop is located in Rattay and specializes in selling longswords, pikes and greatshields"
+    },
+    "Simple innkeeper formality" : {
+      "prompt": "Generate a very short sentence from an innkeeper wishing a traveller a good time at their inn.",
+      "original": "Please enjoy your stay.",
+      "context": "You are an innkeeper managing an inn called 'The Sleeping Cow', which is located in Rattay. Your inn targets adventurers as a demographic."
+    },
+    "Rattay infamous question" : {
+      "prompt": "Generate a very short question asking a person what it's like to live in their city Rattay.",
+      "original": "What's life like in Rattay?",
+      "context": "You are an average Villager living in Rattay. You work as a farmer during the day, and enjoy your weekends drinking beer and gambling at the local tavern. Recently many refugees have arrived at Rattay. They are living in poor conditions and have been pickpocketing from the villagers."
+    },
+    "This is a sentence": {
+      "prompt": "Generate a very short sentence that simply says that it is a sentence.",
+      "original":"This is a sentence." 
+    }
+}

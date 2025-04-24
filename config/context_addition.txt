@@ -2,4 +2,4 @@ Here is some additional context:
 
 {context}
 
-Please take this into account, and do not include any information, characters or names not present in the prompt.
+Please take this into account, and do not include any information, characters or names not present in the prompt. You are allowed to modify the output based on the context given.
