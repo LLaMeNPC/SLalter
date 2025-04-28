@@ -1,0 +1,67 @@
+{
+  "I should go - rewrite - ME3": {
+    "original": "I should go",
+    "description": "The overuse of this generic line makes conversations feel robotic and non-organic."
+  },
+  "Arrow to the knee - prompt - Skyrim": {
+    "prompt": "You are a guard who used to be an adventurer. Generate a short piece of dialogue, where you explain why you are not an adventurer anymore.",
+    "description": "It is quite immersion breaking that all the guards took an arrow to the knee"
+  },
+  "We doing this? - rewrite - Cyberpunk 2077": {
+    "original": "Are we doing this or what?",
+    "description": "Line often repeated by Panam, making her feel like a bot"
+  },
+  "Talos guide you - prompt - Skyrim": {
+    "prompt": "Generate a small piece of small talk",
+    "context": "You are a nord, Ulfric Stormcloak, leader of the rebellion against the empire, which is attempting to dominate the realm of Skyrim. You are preparing for the future battles of the rebellion, where you aim to become the high king.",
+    "description": "It is quite immersion breaking that a possible future king, Ulfric Stormcloak, just sits in his chair and has nothing else to say than 'Talos guide you' when you interract with him"
+  },
+  "The fate of New Vegas - rewrite - Fallout: New Vegas": {
+    "original": "You do realize the fate of New Vegas hangs in the balance?",
+    "description": "Very repeated line from Mr. House"
+  },
+  "We should talk - rewrite - Red Dead Redemption 2": {
+    "original": "Arthur, I reckon we should talk about that job.",
+    "description": "Line that is repeated many times by Hosea"
+  },
+  "Geralt, stop by later - rewrite - The Witcher 3": {
+    "original": "Geralt, do stop by later. We have much to discuss.",
+    "description": "She will repeat this over and over, never giving details, until you actually trigger the mission. Thorbjørn: annoyingly repetitive, maybe feels Immersion Breaking, as most people don't repeat the same sentence over and over."
+  },
+  "Shepard, focus - rewrite w context - ME3": {
+    "original": "Shepard, we need to focus on the real fight.",
+    "context": "The situation has become very urgent, because Shepard has been ignoring the real fight for a long time",
+    "description": "Even if you’re off playing space poker or scanning planets for hours, he just repeats the same urgency without context.Thorbjørn: Lack of increase in urgency feels weird."
+  },
+  "Aloy, are you ready? - rewrite - Horizon ZD": {
+    "original": "Aloy, are you ready to face what comes next?",
+    "description": "  You can go explore for 30 hours, and he just keeps repeating this line, stuck in waiting mode. Thorbjørn: annoyingly repetitive, maybe feels Immersion Breaking, as most people don't repeat the same sentence over and over."
+  },
+  "Hello, my love - rewrite w context - Skyrim": {
+    "original": "Hello, my love. Back from another adventure?",
+    "context": "You are married to the Dragonborn, who just returned from an adventure where they might have fought a dragon, troll, bandits or maybe some Draugr",
+    "description": "They just stand in your house repeating this generic line forever."
+  },
+  "Serena (vampire): What is it? - prompt w context - Skyrim": {
+    "prompt": "Generate a small piece of smalltalk",
+    "context": "You are a vampire named Serena. The person you are talking to is an ally who just helped you kill your mad father, who was the vampire lord Harkon. You are conflicted about it.",
+    "description": "Even though she’s a key character with tons of personality, if you haven’t completed the right quests, she just keeps cycling through the same robotic responses. Thorbjørn: Lack of variations. Very complex background"
+  },
+  "Serena (cured): What is it? - prompt w context - Skyrim": {
+    "prompt": "Generate a small piece of smalltalk",
+    "context": "You are a human named Serena, who was recently a vampire, that got cured. The person you are talking to is an ally who just helped you kill your mad father, who was the vampire lord Harkon. You are conflicted about it.",
+    "description": "Even though she’s a key character with tons of personality, if you haven’t completed the right quests, she just keeps cycling through the same robotic responses. Thorbjørn: Lack of variations. Very complex background"
+  },
+  "(Romance w Yenn) need some time - prompt w context - The Witcher 3": {
+    "prompt": "Generate a small comment, communicating to Geralt how you feel about your relationship with him right now",
+    "context": "You and Geralt have a complicated past, full of love, loss, and destiny pulling you together. But with everything going on — Ciri’s danger, the political mess — you’re stuck in a moment of uncertainty. You need space to think, but your feelings for him are real, no matter how much you try to hide it.",
+    "description": "Even if you’re deep into a romance, she won’t acknowledge it until the game allows her story to move forward."
+  },
+  "(Romance w Triss) talk later - prompt w context - The Witcher 3": {
+    "prompt": "Generate a small comment, communicating to Geralt how you feel about your relationship with him right now",
+    "context": "You and Geralt share real feelings, growing stronger through everything you’ve survived together in Novigrad. But you’re surrounded by danger, hunted, and forced to stay cautious. You can't fully act on your heart until you’re free.",
+    "description": "Even if you’re deep into a romance, she won’t acknowledge it until the game allows her story to move forward."
+  }
+
+}
+
