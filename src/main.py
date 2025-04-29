@@ -105,7 +105,7 @@ while True:
                 elif generation_type == "rewrite":
                     mode = Mode.rewrite
 
-                generator.batch_generate(batch_name, num_alterations, mode)
+                generator.batch_generate(batch_name, num_alterations, selected_model, generation_type, mode)
                 """
                 with open(f"batches/{batch_name}") as batch_data:
                     batch_json = json.load(batch_data)

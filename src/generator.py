@@ -98,13 +98,21 @@ class Generator:
                 return self.rewrite_generate(generation_dict)
         return (None,None)
 
-    def batch_generate(self, batch_name, alteration_count, mode = Mode.auto):
+    def batch_generate(self, batch_name, alteration_count, model_name, mode_name, mode = Mode.auto):
         with open(f"batches/{batch_name}") as batch_data:
             batch_json = json.load(batch_data)
-            date_and_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            date_and_time = datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
             
-            output_filename = f"{batch_name}-alteration-{date_and_time}"
-            output = {"config": self.config, "output": {}}
+            output_filename = f"{batch_name.removesuffix(".json")}<{model_name}>({mode_name}-{alteration_count})-{date_and_time}"
+            info = {
+                "date_and_time": date_and_time,
+                "batch_name": batch_name,
+                "model_name": model_name,
+                "alteration_count": alteration_count,
+                "mode": mode_name,
+            }
+            file_path = f"output/{output_filename}.json"
+            output = {"config": self.config, "info": info, "self_file_name": output_filename, "output": {}}
             print("Rewriting sentences...")
             progress = 0.0
             print_progress_bar(progress)
@@ -124,7 +132,7 @@ class Generator:
                     out_dict["prompt"] = prompt
                     progress += 1.0 / (len(batch_json) * alteration_count)
                     print_progress_bar(progress)
-                with open(f"output/{output_filename}.json", "w") as f:
+                with open(file_path, "w") as f:
                     f.write(json.dumps(output))
-            print(f"Done! Wrote output to output/{output_filename}.json")
+            print(f"Done! Wrote output to {file_path}")
             
