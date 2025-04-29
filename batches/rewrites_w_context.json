@@ -1,0 +1,12 @@
+{
+  "Shepard, focus - rewrite w context - ME3": {
+    "original": "Shepard, we need to focus on the real fight.",
+    "context": "The situation has become very urgent, because Shepard has been ignoring the real fight for a long time",
+    "description": "Even if you’re off playing space poker or scanning planets for hours, he just repeats the same urgency without context.Thorbjørn: Lack of increase in urgency feels weird."
+  },
+  "Hello, my love - rewrite w context - Skyrim": {
+    "original": "Hello, my love. Back from another adventure?",
+    "context": "You are married to the Dragonborn, who just returned from an adventure where they might have fought a dragon, troll, bandits or maybe some Draugr",
+    "description": "They just stand in your house repeating this generic line forever."
+  }
+}

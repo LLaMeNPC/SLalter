@@ -85,6 +85,7 @@ while True:
         while True:
             print("Which batch would you like to generate alterations on?")
             batches = os.listdir("batches")
+            batches.remove("old_format")
             batch_name = get_element_from_choice(choice(batches), batches)
             if batch_name != None:
                 cls()
