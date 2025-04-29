@@ -1,4 +1,34 @@
 {
+  "I should go - rewrite - ME3": {
+    "original": "I should go",
+    "context": "You are leaving a conversation",
+    "description": "The overuse of this generic line makes conversations feel robotic and non-organic."
+  },
+  "We doing this? - rewrite - Cyberpunk 2077": {
+    "original": "Are we doing this or what?",
+    "context": "You want to start a mission, with the person you are talking to",
+    "description": "Line often repeated by Panam, making her feel like a bot"
+  },
+  "The fate of New Vegas - rewrite - Fallout: New Vegas": {
+    "original": "You do realize the fate of New Vegas hangs in the balance?",
+    "context": "You are the leader of New Vegas, and needs the person you are talking with, to help you keep the situation under control. The fate of New Vegas is at stake",
+    "description": "Very repeated line from Mr. House"
+  },
+  "We should talk - rewrite - Red Dead Redemption 2": {
+    "original": "Arthur, I reckon we should talk about that job.",
+    "context": "You are a charletan hustler in the time of the wild west",
+    "description": "Line that is repeated many times by Hosea"
+  },
+  "Geralt, stop by later - rewrite - The Witcher 3": {
+    "original": "Geralt, do stop by later. We have much to discuss.",
+    "context": "You are a well-intended witch who needs the help of Geralt",
+    "description": "She will repeat this over and over, never giving details, until you actually trigger the mission. Thorbjørn: annoyingly repetitive, maybe feels Immersion Breaking, as most people don't repeat the same sentence over and over."
+  },
+  "Aloy, are you ready? - rewrite - Horizon ZD": {
+    "original": "Aloy, are you ready to face what comes next?",
+    "context": "Aloy is the name of a woman. Beyond this is a point of no return, a final battle!",
+    "description": "You can go explore for 30 hours, and he just keeps repeating this line, stuck in waiting mode. Thorbjørn: annoyingly repetitive, maybe feels Immersion Breaking, as most people don't repeat the same sentence over and over."
+  },
   "Shepard, focus - rewrite w context - ME3": {
     "original": "Shepard, we need to focus on the real fight.",
     "context": "The situation has become very urgent, because Shepard has been ignoring the real fight for a long time",
