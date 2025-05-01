@@ -1,0 +1,50 @@
+{
+  "Hello, my love - rewrite - Skyrim": {
+    "original": "Hello, my love. Back from another adventure?",
+    "description": "They just stand in your house repeating this generic line forever."
+  },
+  "We should talk - rewrite - Red Dead Redemption 2": {
+    "original": "Arthur, I reckon we should talk about that job.",
+    "description": "Line that is repeated many times by Hosea"
+  },
+  "Geralt, stop by later - rewrite - The Witcher 3": {
+    "original": "Geralt, do stop by later. We have much to discuss.",
+    "description": "She will repeat this over and over, never giving details, until you actually trigger the mission. Thorbjørn: annoyingly repetitive, maybe feels Immersion Breaking, as most people don't repeat the same sentence over and over."
+  },
+  "The fate of New Vegas - rewrite w context - Fallout: New Vegas": {
+    "original": "You do realize the fate of New Vegas hangs in the balance?",
+    "context": "You are the leader of New Vegas, and needs the person you are talking with, to help you keep the situation under control. The fate of New Vegas is at stake",
+    "description": "Very repeated line from Mr. House"
+  },
+  "We should talk - rewrite w context- Red Dead Redemption 2": {
+    "original": "Arthur, I reckon we should talk about that job.",
+    "context": "You are a charletan hustler in the time of the wild west",
+    "description": "Line that is repeated many times by Hosea"
+  },
+  "Geralt, stop by later - rewrite w context - The Witcher 3": {
+    "original": "Geralt, do stop by later. We have much to discuss.",
+    "context": "You are a well-intended witch who needs the help of Geralt",
+    "description": "She will repeat this over and over, never giving details, until you actually trigger the mission. Thorbjørn: annoyingly repetitive, maybe feels Immersion Breaking, as most people don't repeat the same sentence over and over."
+  },
+  "Talos guide you - prompt w context - Skyrim": {
+    "prompt": "Generate a small piece of small talk",
+    "context": "You are a nord, Ulfric Stormcloak, leader of the rebellion against the empire, which is attempting to dominate the realm of Skyrim. You are preparing for the future battles of the rebellion, where you aim to become the high king.",
+    "description": "It is quite immersion breaking that a possible future king, Ulfric Stormcloak, just sits in his chair and has nothing else to say than 'Talos guide you' when you interract with him"
+  },
+  "Serena (vampire): What is it? - prompt w context - Skyrim": {
+    "prompt": "Generate a small piece of smalltalk",
+    "context": "You are a vampire named Serena. The person you are talking to is an ally who just helped you kill your mad father, who was the vampire lord Harkon. You are conflicted about it.",
+    "description": "Even though she’s a key character with tons of personality, if you haven’t completed the right quests, she just keeps cycling through the same robotic responses. Thorbjørn: Lack of variations. Very complex background"
+  },
+  "Serena (cured): What is it? - prompt w context - Skyrim": {
+    "prompt": "Generate a small piece of smalltalk",
+    "context": "You are a human named Serena, who was recently a vampire, that got cured. The person you are talking to is an ally who just helped you kill your mad father, who was the vampire lord Harkon. You are conflicted about it.",
+    "description": "Even though she’s a key character with tons of personality, if you haven’t completed the right quests, she just keeps cycling through the same robotic responses. Thorbjørn: Lack of variations. Very complex background"
+  },  
+  "(Romance w Yenn) need some time - prompt w context - The Witcher 3": {
+    "prompt": "Generate a small comment, communicating to Geralt how you feel about your relationship with him right now",
+    "context": "You and Geralt have a complicated past, full of love, loss, and destiny pulling you together. But with everything going on — Ciri’s danger, the political mess — you’re stuck in a moment of uncertainty. You need space to think, but your feelings for him are real, no matter how much you try to hide it.",
+    "description": "Even if you’re deep into a romance, she won’t acknowledge it until the game allows her story to move forward."
+  }
+
+}
