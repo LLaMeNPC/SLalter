@@ -101,9 +101,10 @@ class Generator:
     def batch_generate(self, batch_name, alteration_count, model_name, mode_name, mode = Mode.auto):
         with open(f"batches/{batch_name}") as batch_data:
             batch_json = json.load(batch_data)
-            date_and_time = datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
+            date_and_time = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
             
             output_filename = f"{batch_name.removesuffix(".json")}({model_name})({mode_name}-{alteration_count})-{date_and_time}"
+            output_filename = output_filename.replace(":", "_")
             info = {
                 "date_and_time": date_and_time,
                 "batch_name": batch_name,
