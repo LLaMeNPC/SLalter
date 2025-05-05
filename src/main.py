@@ -8,7 +8,7 @@ models = [
     "smollm2:135m",
     "smollm2:360m",
     "smollm2:1.7b",
-    "smollm2:1.7b-instruct-q5_K_M",
+    "smollm2:1.7b-instruct-fp16",
     "deepseek-r1:1.5b",
     "deepseek-r1:7b",
     "llama3.2:1b",
