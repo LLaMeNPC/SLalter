@@ -1,0 +1,22 @@
+{
+  "Smith suggest - readable format - skyrim": {
+    "prompt": "Based on what the person you are talking to is wearing, and what you have in your shop, suggest something for them to buy.",
+    "context": "You are in a medieval fanstasy setting. The person you are talking to is wearing a Leather armor on their chest, a Scaled Helmet on their head, Ancient Falmer Boots, and Worn Shrouded Gloves.\n\nYou have in your shop:\nScaled Bracers,\nLinwe's gloves,\nChitin Bracers,\nGlass Gauntlets,\nSteel armor,\nFur Helmet,\nDragonscale Boots\n\n\nYou are a Smith. You want to sell the person you are talking to some gear.",
+    "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+  },
+  "Smith suggest - readable format - generic": {
+    "prompt": "Based on what the person you are talking to is wearing, and what you have in your shop, suggest something for them to buy.",
+    "context": "You are in a medieval fanstasy setting. The person you are talking to is wearing a Scaled Helmet on their head, Hardened Leather Cuirass on their chest, Worn Shrouded Gloves, and Ancient Falmer Boots.\n\nYou have in your shop: Bronzed Armguards, Duskwoven Gloves, Boneplated Bracers, Crystalsteel Gauntlets, Tempered Iron Armor, Wolffur Cap, and Skyhide Boots.\n\nYou are a Smith. You want to sell the person you are talking to some gear.",
+    "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+  },
+  "Smith suggest - json format - skyrim": {
+    "prompt": "Based on what the person you are talking to is wearing, and what you have in your shop, suggest something for them to buy.",
+    "context": "",
+    "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+  },
+  "Smith suggest - json format - generic": {
+    "prompt": "Based on what the person you are talking to is wearing, and what you have in your shop, suggest something for them to buy.",
+    "context": "You are in a medieval fanstasy setting. The person you are talking to is wearing a Scaled Helmet on their head, Hardened Leather Cuirass on their chest, Worn Shrouded Gloves, and Ancient Falmer Boots.\n\nYou have in your shop: Bronzed Armguards, Duskwoven Gloves, Boneplated Bracers, Crystalsteel Gauntlets, Tempered Iron Armor, Wolffur Cap, and Skyhide Boots.\n\nYou are a Smith. You want to sell the person you are talking to some gear.",
+    "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+  }
+}
