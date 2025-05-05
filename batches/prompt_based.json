@@ -3,7 +3,7 @@
     "prompt": "You are a guard who used to be an adventurer. Generate a short piece of dialogue, where you explain why you are not an adventurer anymore.",
     "description": "It is quite immersion breaking that all the guards took an arrow to the knee"
   },
-  "Arrow to the knee - prompt - Skyrim": {
+  "Arrow to the knee (forced injury) - prompt - Skyrim": {
     "prompt": "You are a guard who used to be an adventurer. Generate a short piece of dialogue, where you explain how an injury caused you to stop being an adventurer",
     "description": "It is quite immersion breaking that all the guards took an arrow to the knee"
   }
