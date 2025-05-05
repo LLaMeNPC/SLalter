@@ -1,15 +1,15 @@
 {
-  "Smith suggest": {
+  "Smith suggest - Context: Skyrim armor, Skyrim shop inventory": {
     "prompt": "Based on what the person you are talking to is wearing, and what you have in your shop, suggest something for them to buy.",
     "context": "You are in a medieval fanstasy setting. The person you are talking to is wearing a Leather armor on their chest, a Scaled Helmet on their head, Ancient Falmer Boots, and Worn Shrouded Gloves.\n\nYou have in your shop:\nScaled Bracers,\nLinwe's gloves,\nChitin Bracers,\nGlass Gauntlets,\nSteel armor,\nFur Helmet,\nDragonscale Boots\n\n\nYou are a Smith. You want to sell the person you are talking to some gear.",
     "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
   },
-  "Comment on gear": {
+  "Comment on gear - Context: Skyrim armor": {
     "prompt": "Make a comment on the gear that the person you are talking to is wearing.",
     "context": "You are in a medieval fantasy setting. The person you are talking to is wearing a Leather armor on their chest, a Scaled Helmet on their head, Ancient Falmer Boots, and Worn Shrouded Gloves",
     "description": "Output should vary based on the equipent the player is wearing"
   },
-  "Roast with gear context": {
+  "Roast with gear context - Context: Skyrim armor": {
     "prompt": "Generate a negative remark towards person you are talking to",
     "context": "You are in a medieval fantasy setting. The person you are talking to is wearing a Leather armor on their chest, a Scaled Helmet on their head, Ancient Falmer Boots, and Worn Shrouded Gloves",
     "description": "Output should vary based on the equipent the player is wearing"
