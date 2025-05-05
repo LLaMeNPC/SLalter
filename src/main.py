@@ -13,7 +13,9 @@ models = [
     "deepseek-r1:7b",
     "llama3.2:1b",
     "llama3.2",
-    "gemma3:1b"
+    "gemma3:1b",
+    "nemotron-mini:4b-instruct-fp16",
+    "gemma3:27b-it-q8_0"
 ]
 
 modes = [
