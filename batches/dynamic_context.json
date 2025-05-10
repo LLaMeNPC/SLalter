@@ -20,21 +20,46 @@
     "context": "The person you are talking to is wearing {'head': {'name': 'Elven Helmet', 'armor': 14}, 'chest': {'name': 'Ancient Falmer Cuirass', 'armor': 38}, 'hands': {'name': 'Nightingale Gloves', 'armor': 10}, 'feet': {'name': 'Ancient Falmer Boots', 'armor': 11}}.\n\nYou have in your shop: [{'name': 'Scaled Bracers', 'armor': 9, 'body_part': 'hands'}, {'name': 'Deathbrand Gauntlets', 'armor': 11, 'body_part': 'hands'}, {'name': 'Chitin Bracers', 'armor': 8.5, 'body_part': 'hands'}, {'name': 'Glass Gauntlets', 'armor': 11, 'body_part': 'hands'}, {'name': 'Steel armor', 'armor': 31, 'body_part': 'chest'}, {'name': 'Fur Helmet', 'armor': 11, 'body_part': 'head'}, {'name': 'Dragonscale Boots', 'armor': 12, 'body_part': 'feet'}].\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
     "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
   },
+  "Smith suggest - skyrim armor - simple json format": {
+    "prompt": "Based on what the person you are talking to is wearing, and what you have in your shop, suggest something for them to buy.",
+    "context": "The person you are talking to is wearing {'head': 'Elven Helmet', 'chest': 'Ancient Falmer Cuirass', 'hands': 'Nightingale Gloves', 'feet': 'Ancient Falmer Boots'}.\n\nYou have in your shop: ['Scaled Bracers', 'Deathbrand Gauntlets', 'Chitin Bracers', 'Glass Gauntlets', 'Steel armor', 'Fur Helmet', 'Dragonscale Boots'].\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
+    "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+  },
   "Smith suggest - skyrim armor - readable format": {
     "prompt": "Based on what the person you are talking to is wearing, and what you have in your shop, suggest something for them to buy.",
     "context": "The person you are talking to is wearing a Elven Helmet on their head, Ancient Falmer Cuirass on their chest, Nightingale Gloves, and Ancient Falmer Boots.\n\nYou have in your shop: Scaled Bracers, Deathbrand Gauntlets, Chitin Bracers, Glass Gauntlets, Steel armor, Fur Helmet, and Dragonscale Boots.\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
     "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
   },
-
+  
   "Greeting - generic armor - full json format": {
     "prompt": "Generate a short friendly greeting.",
     "context": "The person you are talking to is wearing {'head': {'name': 'Ironbark Helm', 'armor': 14}, 'chest': {'name': 'Tempered Iron Armor', 'armor': 38}, 'hands': {'name': 'Hide Gloves', 'armor': 10}, 'feet': {'name': 'Wyrmscale Boots', 'armor': 11}}.\n\nYou have in your shop: [{'name': 'Bronzed Armguards', 'armor': 9, 'body_part': 'hands'}, {'name': 'Duskwoven Gloves', 'armor': 11, 'body_part': 'hands'}, {'name': 'Boneplated Bracers', 'armor': 8.5, 'body_part': 'hands'}, {'name': 'Crystalsteel Gauntlets', 'armor': 11, 'body_part': 'hands'}, {'name': 'Hardened Leather Cuirass', 'armor': 31, 'body_part': 'chest'}, {'name': 'Wolffur Cap', 'armor': 11, 'body_part': 'head'}, {'name': 'Skyhide Boots', 'armor': 12, 'body_part': 'feet'}].\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
+    "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+  },
+  "Greeting - generic armor - simple json format": {
+    "prompt": "Generate a short friendly greeting.",
+    "context": "The person you are talking to is wearing {'head': 'Ironbark Helm', 'chest': 'Tempered Iron Armor', 'hands': 'Hide Gloves', 'feet': 'Wyrmscale Boots'}.\n\nYou have in your shop: ['Bronzed Armguards', 'Duskwoven Gloves', 'Boneplated Bracers', 'Crystalsteel Gauntlets', 'Hardened Leather Cuirass', 'Wolffur Cap', 'Skyhide Boots'].\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
+    "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+  },
+  "Greeting - generic armor - readable format": {
+    "prompt": "Generate a short friendly greeting.",
+    "context": "The person you are talking to is wearing a Ironbark Helm on their head, Tempered Iron Armor on their chest, Hide Gloves, and Wyrmscale Boots.\n\nYou have in your shop: Bronzed Armguards, Duskwoven Gloves, Boneplated Bracers, Crystalsteel Gauntlets, Hardened Leather Cuirass, Wolffur Cap, and Skyhide Boots.\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
     "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
   },
 
   "Greeting - skyrim armor - full json format": {
     "prompt": "Generate a short friendly greeting.",
     "context": "The person you are talking to is wearing {'head': {'name': 'Elven Helmet', 'armor': 14}, 'chest': {'name': 'Ancient Falmer Cuirass', 'armor': 38}, 'hands': {'name': 'Nightingale Gloves', 'armor': 10}, 'feet': {'name': 'Ancient Falmer Boots', 'armor': 11}}.\n\nYou have in your shop: [{'name': 'Scaled Bracers', 'armor': 9, 'body_part': 'hands'}, {'name': 'Deathbrand Gauntlets', 'armor': 11, 'body_part': 'hands'}, {'name': 'Chitin Bracers', 'armor': 8.5, 'body_part': 'hands'}, {'name': 'Glass Gauntlets', 'armor': 11, 'body_part': 'hands'}, {'name': 'Steel armor', 'armor': 31, 'body_part': 'chest'}, {'name': 'Fur Helmet', 'armor': 11, 'body_part': 'head'}, {'name': 'Dragonscale Boots', 'armor': 12, 'body_part': 'feet'}].\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
+    "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+  },
+  "Greeting - skyrim armor - simple json format": {
+    "prompt": "Generate a short friendly greeting.",
+    "context": "The person you are talking to is wearing {'head': 'Elven Helmet', 'chest': 'Ancient Falmer Cuirass', 'hands': 'Nightingale Gloves', 'feet': 'Ancient Falmer Boots'}.\n\nYou have in your shop: ['Scaled Bracers', 'Deathbrand Gauntlets', 'Chitin Bracers', 'Glass Gauntlets', 'Steel armor', 'Fur Helmet', 'Dragonscale Boots'].\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
+    "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+  },
+  "Greeting - skyrim armor - readable format": {
+    "prompt": "Generate a short friendly greeting.",
+    "context": "The person you are talking to is wearing a Elven Helmet on their head, Ancient Falmer Cuirass on their chest, Nightingale Gloves, and Ancient Falmer Boots.\n\nYou have in your shop: Scaled Bracers, Deathbrand Gauntlets, Chitin Bracers, Glass Gauntlets, Steel armor, Fur Helmet, and Dragonscale Boots.\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
     "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
   }
 }

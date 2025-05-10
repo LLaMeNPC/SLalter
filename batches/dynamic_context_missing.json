@@ -1,0 +1,27 @@
+{
+    "Smith suggest - skyrim armor - simple json format": {
+        "prompt": "Based on what the person you are talking to is wearing, and what you have in your shop, suggest something for them to buy.",
+        "context": "The person you are talking to is wearing {'head': 'Elven Helmet', 'chest': 'Ancient Falmer Cuirass', 'hands': 'Nightingale Gloves', 'feet': 'Ancient Falmer Boots'}.\n\nYou have in your shop: ['Scaled Bracers', 'Deathbrand Gauntlets', 'Chitin Bracers', 'Glass Gauntlets', 'Steel armor', 'Fur Helmet', 'Dragonscale Boots'].\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
+        "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+    },
+    "Greeting - generic armor - simple json format": {
+        "prompt": "Generate a short friendly greeting.",
+        "context": "The person you are talking to is wearing {'head': 'Ironbark Helm', 'chest': 'Tempered Iron Armor', 'hands': 'Hide Gloves', 'feet': 'Wyrmscale Boots'}.\n\nYou have in your shop: ['Bronzed Armguards', 'Duskwoven Gloves', 'Boneplated Bracers', 'Crystalsteel Gauntlets', 'Hardened Leather Cuirass', 'Wolffur Cap', 'Skyhide Boots'].\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
+        "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+    },
+    "Greeting - generic armor - readable format": {
+        "prompt": "Generate a short friendly greeting.",
+        "context": "The person you are talking to is wearing a Ironbark Helm on their head, Tempered Iron Armor on their chest, Hide Gloves, and Wyrmscale Boots.\n\nYou have in your shop: Bronzed Armguards, Duskwoven Gloves, Boneplated Bracers, Crystalsteel Gauntlets, Hardened Leather Cuirass, Wolffur Cap, and Skyhide Boots.\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
+        "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+    },
+    "Greeting - skyrim armor - simple json format": {
+        "prompt": "Generate a short friendly greeting.",
+        "context": "The person you are talking to is wearing {'head': 'Elven Helmet', 'chest': 'Ancient Falmer Cuirass', 'hands': 'Nightingale Gloves', 'feet': 'Ancient Falmer Boots'}.\n\nYou have in your shop: ['Scaled Bracers', 'Deathbrand Gauntlets', 'Chitin Bracers', 'Glass Gauntlets', 'Steel armor', 'Fur Helmet', 'Dragonscale Boots'].\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
+        "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+    },
+    "Greeting - skyrim armor - readable format": {
+        "prompt": "Generate a short friendly greeting.",
+        "context": "The person you are talking to is wearing a Elven Helmet on their head, Ancient Falmer Cuirass on their chest, Nightingale Gloves, and Ancient Falmer Boots.\n\nYou have in your shop: Scaled Bracers, Deathbrand Gauntlets, Chitin Bracers, Glass Gauntlets, Steel armor, Fur Helmet, and Dragonscale Boots.\n\nYou are a Smith who sells armor. You are talking to a potential customer.",
+        "description": "Shop contents and player equipment can vary, which would change the context and therefore the generated output"
+    }
+}

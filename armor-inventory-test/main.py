@@ -89,4 +89,4 @@ def main():
 
 if __name__ == "__main__":
     #main()
-    print_readable_format(person_armors["skyrim"], shop_inventories["skyrim"])
+    print_simple_json_format(person_armors["skyrim"], shop_inventories["skyrim"])
