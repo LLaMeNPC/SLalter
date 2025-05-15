@@ -76,12 +76,12 @@ source <path>/cdmod.sh
 
 # Run
 
-Before running SLalter make sure that `ollama` is running. Check that `ollama` runs using:
+Before running SLalter make sure that `ollama` is running. Check that `ollama` is running by using:
 ```
 $ ollama ps
 ```
 
-If it isn't running run it using:
+Most installations of ollama will automatically run the ollama daemon. If it isn't running, the ollama daemon can be started with:
 ```
 $ ollama serve
 ```
@@ -91,7 +91,7 @@ Now, run SLalter using:
 $ python src/main.py
 ```
 
-This should show a list of the available models.
+A list of available models will be shown.
 
 ```
 Which model would you like to use?
@@ -109,7 +109,7 @@ Which model would you like to use?
 Please select an option:
 ```
 
-When selecting a model it might take a while to download. Especicially if selecting a big model like `gemma3:27b-it-q8_0`.
+When selecting a model for the first time it might take a while to download. Especicially if selecting a big model like `gemma3:27b-it-q8_0`.
 
 Afterwards you get an option to select either `Input rewrite` or `Batch rewrite`.
 
@@ -146,7 +146,7 @@ The temperature and role can be configured in `config.json`:
 }
 ```
 
-Models can be added to or removed from the list in `main.py`. They will only be downloaded when selecting them when running SLalter:
+Any model available through ollama can be added to or removed from the list `models` in `main.py`. They will only be downloaded when selecting them when running SLalter:
 ```python
 models = [
     "smollm2:135m",
